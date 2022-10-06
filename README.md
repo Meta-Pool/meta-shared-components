@@ -3,6 +3,7 @@
 # Components
 
 - Page Blocker
+- Color Mode Toggle
 
 # Usage
 
@@ -58,4 +59,12 @@ export default function PageBlockerExample() {
     <PageBlocker isActive={pageBlocerState.isActive} message={pageBlocerState.message}  />
   );
 }
+```
+
+## Color Mode Toggle
+
+To manage color mode in your application, toggle between dark and light modes.
+
+```tsx
+  <ColorModeToggle />
 ```
