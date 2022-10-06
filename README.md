@@ -8,7 +8,6 @@
 
 ## Page Blocker
 
-### Prerequisites
 In order to use the `Page Blocker`, we need to keep the component state to be used among components in our app.
 You can use your favourite state management such as redux, zustand, recoil, etc. We are going to use `zustand`.
 
@@ -21,7 +20,7 @@ import type { PageBlockerState } from "@metapool/meta-shared-components";
 export const blockerStore = create<PageBlockerState>(() => ({  message: "Confirm this action in your wallet", isActive: false }));
 ```
 
-### Setting Store state
+### Setting Store state example
 
 ```ts
 import { blockerStore } from "../stores/pageBlocker";

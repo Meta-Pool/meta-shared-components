@@ -1,6 +1,6 @@
 {
-  "name": "@leomanza/meta-shared-components",
-  "version": "0.0.13",
+  "name": "@meta-pool/meta-shared-components",
+  "version": "0.0.1",
   "description": "Meta Shared React components",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -8,11 +8,12 @@
     "dist"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/leomanza"
+    "registry": "https://npm.pkg.github.com/meta-pool"
   },
   "types": "dist/index.d.ts",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "publish": "npm publish --access public"
   },
   "author": "Leandro Manzanal (leandro.manzanal@metapool.app)",
   "license": "ISC",
@@ -34,5 +35,18 @@
   "peerDependencies": {
     "@emotion/react": "^11.8.2",
     "react": "^17.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meta-Pool/meta-shared-components.git"
+  },
+  "keywords": [
+    "meta-components",
+    "react",
+    "chakra-ui"
+  ],
+  "bugs": {
+    "url": "https://github.com/Meta-Pool/meta-shared-components/issues"
+  },
+  "homepage": "https://github.com/Meta-Pool/meta-shared-components#readme"
 }
