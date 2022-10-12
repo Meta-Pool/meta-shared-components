@@ -1,4 +1,12 @@
 # Meta Shared Components
+# Install
+create a .npmrc file on the same folder the package.json exists. Ask for the authTokes..
+```xml
+registry=https://registry.npmjs.org/
+@meta-pool-apps:registry=https://npm.pkg.github.com/
+//npm.pkg.github.com/:_authToken=ghp_....
+//registry.npmjs.org/:_authToken=npm_...
+```
 
 # Components
 
@@ -59,12 +67,4 @@ export default function PageBlockerExample() {
     <PageBlocker isActive={pageBlocerState.isActive} message={pageBlocerState.message}  />
   );
 }
-```
-
-## Color Mode Toggle
-
-To manage color mode in your application, toggle between dark and light modes.
-
-```tsx
-  <ColorModeToggle />
 ```
